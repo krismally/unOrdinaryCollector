@@ -4,10 +4,11 @@
 
 {% for char in chars %}
 <div class="card">
-    <a href="{% url 'detail' char.id %}">
+    <a href="#">
         <div class="card-content">
             <span class="card-title">{{ char.name }}</span>
-            <p>{{ char.year }} Year</p>
+            <p>Year {{ char.year }}</p>
+            <p>Ability Level (Out of 10): {{ char.ability_score }}</p>
             <p>Description: {{ char.description }}</p>
         </div>
     </a>

@@ -20,8 +20,9 @@
             </li>
           </ul>
           <ul class="right">
-            <li><a href="/about">About</a></li>
-            <li><a href="/characters">View My Favorite Characters</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'chars_create' %}">Add a Character</a></li>
+            <li><a href="{% url 'index' %}">View Favorite Characters</a></li>
           </ul>
         </div>
       </nav>
